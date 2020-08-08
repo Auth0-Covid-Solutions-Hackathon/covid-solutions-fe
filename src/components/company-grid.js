@@ -3,13 +3,13 @@ import Axios from 'axios';
 import Card from './company-card.js'
 
 function CompanyGrid(){
-
     const [name, setName] = useState("");
     const [capacity, setCapacity] = useState("");
     const [distance, setDistance] = useState("");
     const [masks, setMasks] = useState("");
     const [home, setHome] = useState("");
     const [comments, setComments] = useState("");
+    
         
     useEffect(() => {
         Axios
@@ -42,5 +42,6 @@ function CompanyGrid(){
             </div>
         );
     }
+
+    export default CompanyGrid
     
-    export default CompanyGrid;

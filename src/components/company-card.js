@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Card = (props) => {
-
     return (
       <div class="flex-wrap border-solid border-2 h-auto mr-10 ml-10 mt-2">
           <div class="flex w-full h-10 justify-center">
