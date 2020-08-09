@@ -25,7 +25,7 @@ function CompanyGrid(){
         return(
             <div>
                 <div class="flex items-center justify-center h-15 mt-6 font-serif italic mr-10 ml-10 "> 
-                    <h1 class="text-base border-b-2 border-black">Choose what companies you support by their COVID-19 guidelines</h1>
+                    <h1 class="text-base border-b-2 border-black lg:text-4xl ">Choose what companies you support by their COVID-19 guidelines</h1>
                  </div>
 
             <div 

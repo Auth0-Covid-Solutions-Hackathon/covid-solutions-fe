@@ -11,12 +11,12 @@ AOS.init()
         
       <div 
       data-aos="flip-down"
-      data-aos-duration="3000"
-      class="flex-wrap w-auto h-auto mr-10 ml-10 mt-6 border-b-2 border-logoblue lg:w-1/4 lg:border-4 lg:rounded-lg md:text-xl lg:bg-gray-200 ">
-          <div class="flex w-full h-12 items-center justify-center mt-4  ">
-              <img alt="logo" class="h-16 w-2/4 lg:w-40 lg:h-28 mt-6" src = {props.image} />     
+      data-aos-duration="1500"
+      class="flex-wrap w-auto h-1/4 mr-10 ml-10 mt-6 border-b-2 border-logoblue lg:border-4 lg:rounded-lg lg:w-1/4 md:text-xl  ">
+          <div class="flex w-full h-32 items-center justify-center mt-4 lg:h-32 ">
+              <img alt="logo" class="h-32 w-2/4 lg:w-40 lg:h-full mt-6 lg:max-w-2xl  " src = {props.image} />     
           </div>
-          <div class="flex w-full h-16 lg:h-32 mb-4 mt-4 justify-center items-center mt-3">
+          <div class="flex w-full h-16 lg:h-3 mb-4 mt-4 justify-center items-end mt-3 lg:h-12 lg:mb-8 ">
               <h1 class="w-2/4 text-2xl italic underline md:text-3xl text-logodark ">{props.name}</h1> 
           </div>
           <div class="flex w-full h-12 items-center justify-center font-serif text-logodark " >
@@ -39,6 +39,7 @@ AOS.init()
               <h1 class ="w-1/2 lg:w-56">Elderly Hours:</h1>
               <h1>{props.elder ? "✅" : "🚫"}</h1> 
           </div>
+          
         
       </div>
     );
