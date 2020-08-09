@@ -3,25 +3,18 @@ import Axios from 'axios';
 import Card from './company-card.js'
 
 function CompanyGrid(){
-    const [name, setName] = useState("");
-    const [capacity, setCapacity] = useState("");
-    const [distance, setDistance] = useState("");
-    const [masks, setMasks] = useState("");
-    const [home, setHome] = useState("");
-    const [comments, setComments] = useState("");
+    const [companies, setCompanies] = useState([])
     
         
     useEffect(() => {
         Axios
         .get('http://localhost:5000/company')
+        // .then(res => res.json())
         .then(res => {
             console.log(res.data, "Success")
-            setName(res.data.name)
-            setCapacity(res.data.capacity)
-            setDistance(res.data.distance)
-            setMasks(res.data.masks)
-            setHome(res.data.home)
-            setComments(res.data.comments)
+            setCompanies(res.data)
+           
+
         })
         .catch(error =>{
             console.log(error, "error")
@@ -29,15 +22,24 @@ function CompanyGrid(){
     }, [])
     
         return(
+            
             <div>
-                <Card
-                key={name} 
-                capacity={capacity}
-                distance={distance}
-                masks={masks}
-                home={home}
-                comments={comments}
+                <div class="flex items-center justify-center h-15 mt-6 font-serif italic mr-10 ml-10 "> 
+                    <h1 class="text-base border-b-2 border-black">Choose which companies you will support by their COVID-19 guidelines</h1>
+                 </div>
+                {companies.map(company => (
+                     <Card
+                key={company.name} 
+                name={company.name}
+                image={company.image}
+                capacity={company.capacity}
+                distance={company.distance}
+                masks={company.masks}
+                home={company.home}
+                elder={company.elder}
                 />
+                ))}
+               
   
             </div>
         );

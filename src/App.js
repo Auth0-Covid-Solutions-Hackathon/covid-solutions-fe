@@ -3,14 +3,19 @@ import './App.css';
 import Nav from './components/nav.js'
 import Card from './components/company-grid.js'
 import Footer from './components/footer.js'
+import {Route, BrowserRouter as Router} from "react-router-dom";
+import Register from './components/register-page.js'
 
 
 function App() {
   return (
     <div className="App">
+      <Router>
       <Nav />
-      <Card />
+      <Route exact path="/" component={Card} />
+      <Route exact path="/register" component={Register} />
       <Footer />
+      </Router>
     </div>
   );
 }
