@@ -6,8 +6,8 @@ import Footer from './components/footer.js'
 import {Route, BrowserRouter as Router} from "react-router-dom";
 import Register from './components/register-page.js'
 
-
 function App() {
+  // AOS.init()
   return (
     <div className="App">
       <Router>

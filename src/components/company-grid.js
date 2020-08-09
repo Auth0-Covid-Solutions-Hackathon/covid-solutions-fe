@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Axios from 'axios';
 import Card from './company-card.js'
 
+
 function CompanyGrid(){
     const [companies, setCompanies] = useState([])
     
@@ -22,11 +23,16 @@ function CompanyGrid(){
     }, [])
     
         return(
-            
             <div>
                 <div class="flex items-center justify-center h-15 mt-6 font-serif italic mr-10 ml-10 "> 
                     <h1 class="text-base border-b-2 border-black">Choose which companies you will support by their COVID-19 guidelines</h1>
                  </div>
+
+            <div 
+            class="flex-wrap lg:flex justify-center">
+                
+                 
+
                 {companies.map(company => (
                      <Card
                 key={company.name} 
@@ -41,6 +47,8 @@ function CompanyGrid(){
                 ))}
                
   
+            </div>
+            
             </div>
         );
     }

@@ -16,19 +16,23 @@ const Register = (props) => {
     })
 
     const handleChange = e => {
+        console.log(e.target.name, "name")
+        console.log(e.target.value, "TARGET")
         setCompany(
           {
             ...company,
             [e.target.name]: e.target.value,
-
+            
           }
         )
       }
 
+      
+
 
       const onSubmit = e =>{
         e.preventDefault()
-        console.log(company)
+        console.log(company, "COMPAny")
         axios
         .post('http://localhost:5000/company', company)
         .then(res => {
@@ -47,60 +51,110 @@ const Register = (props) => {
                     <h1>Register Your Company</h1>
                 </div>
 
-                <form class="flex-col ml-10 mr-10 h-64 mt-4" onSubmit={onSubmit}>
+                <form class="flex-col lg:flex-wrap  ml-10 mr-10 h-64 mt-4" onSubmit={onSubmit}>
                     <div class="flex-wrap h-20 w-full justify-center items-center">
                         <label class="w-full">Company Name </label>
-                        <input class="w-full border-2 p-1 border-gray-300 mt-2" type='text' name='name' placeholder='Company name' onChange={handleChange} value={company.name} required />
+                        <input class="w-full lg:w-64 border-2 p-1 border-gray-300 mt-2" type='text' name='name' placeholder='Company name' onChange={handleChange} value={company.name} required />
                     </div>
                     <div class="flex-wrap h-20 w-full justify-center items-center">
                         <label class="w-full">Company Logo </label>
-                        <input class="w-full border-2 p-1 border-gray-300 mt-2" type='text' name='image' placeholder='https://i.imgur.com/j2QcJAu.jpeg' onChange={handleChange} value={company.image} />
+                        <input class="w-full lg:w-64 border-2 p-1 border-gray-300 mt-2" type='text' name='image' placeholder='https://i.imgur.com/j2QcJAu.jpeg' onChange={handleChange} value={company.image} />
                     </div>
                     <div class="flex-col h-20 w-full justify-center items-center mt-4">
                         <label class="flex justify-center sw-full">Capacity Restrictions</label>
-                            <select class="w-32 border-2 mt-4" value={company.capacity} onChange={handleChange}>
-                                <option>Choose One</option>
-                                <option value="true" >✅</option>
-                                <option value="false">🚫</option>
+                        
+                        <div className="radio">
+                            <label>
+                                <input class=" w-12 mt-4" type="radio" value="true" name="capacity" onChange={handleChange}/>
+                                    ✅
+                            </label>
+                        </div>
 
-                             </select>                                       
+                        <div>
+                            <label class="w-1/2">
+                                <input class="w-12 mt-4" type="radio" value="false" name="capacity" onChange={handleChange} />
+                                🚫
+                            </label>
+                        
+                        </div>                                                        
                     </div>
+
                     <div class="flex-col h-20 w-full justify-center items-center mt-4">
                         <label class="flex justify-center sw-full">Social Distancing</label>
-                            <select class="w-32 border-2 mt-4" value={company.distance} onChange={handleChange}>
-                                <option>Choose One</option>
-                                <option value="true"> ✅</option>
-                                <option value="false">🚫</option>
-                             </select>                                       
+                        
+                        <div className="radio">
+                            <label>
+                                <input class=" w-12 mt-4" type="radio" value="true" name="distance" onChange={handleChange} />
+                                    ✅
+                            </label>
+                        </div>
+
+                        <div>
+                            <label class="w-1/2">
+                                <input class="w-12 mt-4" type="radio" value="false" name="distance" onChange={handleChange} />
+                                🚫
+                            </label>
+                        
+                        </div>                                                        
                     </div>
                     <div class="flex-col h-20 w-full justify-center items-center mt-4">
-                        <label class="flex justify-center sw-full">Masks required</label>
-                            <select class="w-32 border-2 mt-4" value={company.masks} onChange={handleChange}>
-                                <option>Choose One</option>
-                                <option value="true">✅</option>
-                                <option value="false">🚫</option>
+                        <label class="flex justify-center sw-full">Mask Restrictions</label>
+                        
+                        <div className="radio">
+                            <label>
+                                <input class=" w-12 mt-4" type="radio" value="true" name="masks" onChange={handleChange}/>
+                                    ✅
+                            </label>
+                        </div>
 
-                             </select>                                       
+                        <div>
+                            <label class="w-1/2">
+                                <input class="w-12 mt-4" type="radio" value="false" name="masks" onChange={handleChange} />
+                                🚫
+                            </label>
+                        
+                        </div>                                                        
                     </div>
+
                     <div class="flex-col h-20 w-full justify-center items-center mt-4">
                         <label class="flex justify-center sw-full">Work from Home</label>
-                            <select class="w-32 border-2 mt-4" value={company.home} onChange={handleChange}>
-                                <option>Choose One</option>
-                                <option value="true">✅</option>
-                                <option value="false">🚫</option>
+                        
+                        <div className="radio">
+                            <label>
+                                <input class=" w-12 mt-4" type="radio" value="true" name="home" onChange={handleChange} />
+                                    ✅
+                            </label>
+                        </div>
 
-                             </select>                                       
+                        <div>
+                            <label class="w-1/2">
+                                <input class="w-12 mt-4" type="radio" value="false" name="home" onChange={handleChange} />
+                                🚫
+                            </label>
+                        
+                        </div>                                                        
                     </div>
                     <div class="flex-col h-20 w-full justify-center items-center mt-4">
-                        <label class="flex justify-center sw-full">Elderly Hours</label>
-                            <select class="w-32 border-2 mt-4" value={company.elder} onChange={handleChange}>
-                                <option>Choose One</option>
-                                <option value="true">✅</option>
-                                <option value="false">🚫</option>
+                        <label class="flex justify-center sw-full">Elder Hours</label>
+                        
+                        <div className="radio">
+                            <label>
+                                <input class=" w-12 mt-4" type="radio" value="true" name="elder" onChange={handleChange} />
+                                    ✅
+                            </label>
+                        </div>
 
-                             </select>                                       
+                        <div>
+                            <label class="w-1/2">
+                                <input class="w-12 mt-4" type="radio" value="false" name="elder" onChange={handleChange} />
+                                🚫
+                            </label>
+                        
+                        </div>                                                        
                     </div>
-                    <div class="mt-6 ">
+
+
+                    <div class="mt-12 ml-2">
                         <button type="submit" class="border-2 border-black p-2">Submit!</button>
                     </div>
                     
