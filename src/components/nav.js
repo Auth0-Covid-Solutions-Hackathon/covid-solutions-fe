@@ -9,7 +9,8 @@ function Nav() {
       <div className="App">
         <nav class="flex h-22">
             <div class="flex justify-start items-center h-22 mt-3 w-20 md:w-1/4 text-2xl font-black font-serif underline cursor-default  ">
-                <img class="h-20 mr-6 w-20 lg:ml-40" src={logo} alt="logo" ></img>
+                <Link to='/'>
+                <img class="h-20 mr-6 w-20 lg:ml-40" src={logo} alt="logo" ></img></Link>
             </div> 
             <div 
              class="flex justify-center items-center mt-3 w-56 md:w-3/4 ">
