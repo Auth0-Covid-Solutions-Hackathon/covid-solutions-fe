@@ -5,14 +5,14 @@ import 'aos/dist/aos.css';
 
 
 const Card = (props) => {
-    console.log(props, "props")
+    // console.log(props, "props")
+
+
+
 AOS.init()
     return (
         
-      <div 
-      data-aos="flip-down"
-      data-aos-duration="1500"
-      class="flex-wrap w-auto h-1/4 mr-10 ml-10 mt-6 border-b-2 border-logoblue lg:border-4 lg:rounded-lg lg:w-1/4 md:text-xl  ">
+      <div data-aos="flip-down" data-aos-duration="1500" class="flex-wrap w-auto h-1/4 mr-10 ml-10 mt-6 border-b-2 border-logoblue lg:border-4 lg:rounded-lg lg:w-1/4 md:text-xl ">
           <div class="flex w-full h-32 items-center justify-center mt-4 lg:h-32 ">
               <img alt="logo" class="h-32 w-2/4 lg:w-40 lg:h-full mt-6 lg:max-w-2xl  " src = {props.image} />     
           </div>
