@@ -9,7 +9,7 @@ function CompanyGrid(){
         
     useEffect(() => {
         Axios
-        .get('http://localhost:5000/company')
+        .get('https://covid-comprimise.herokuapp.com/company')
         // .then(res => res.json())
         .then(res => {
             console.log(res.data, "Success")
