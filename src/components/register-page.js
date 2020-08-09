@@ -48,22 +48,22 @@ const Register = (props) => {
     return (
             <div class="h-screen">
                 <div class="flex mt-8 justify-center font-bold">
-                    <h1>Register Your Company</h1>
+                    <h1 class="text-md lg:text-3xl">Register Your Company</h1>
                 </div>
 
                 <form class="flex-col lg:flex-wrap  ml-10 mr-10 h-64 mt-4" onSubmit={onSubmit}>
                     <div class="flex-wrap h-20 w-full justify-center items-center">
-                        <label class="w-full">Company Name </label>
+                        <label class="w-full text-xl">Company Name </label>
                         <input class="w-full lg:w-64 border-2 p-1 border-gray-300 mt-2" type='text' name='name' placeholder='Company name' onChange={handleChange} value={company.name} required />
                     </div>
                     <div class="flex-wrap h-20 w-full justify-center items-center">
-                        <label class="w-full">Company Logo </label>
+                        <label class="w-full text-xl">Company Logo </label>
                         <input class="w-full lg:w-64 border-2 p-1 border-gray-300 mt-2" type='text' name='image' placeholder='https://i.imgur.com/j2QcJAu.jpeg' onChange={handleChange} value={company.image} />
                     </div>
                     <div class="flex-col h-20 w-full justify-center items-center mt-4">
-                        <label class="flex justify-center sw-full">Capacity Restrictions</label>
+                        <label class="flex justify-center sw-full text-lg lg:text-2xl">Capacity Restrictions</label>
                         
-                        <div className="radio">
+                        <div className="radio" class="flex-wrap">
                             <label>
                                 <input class=" w-12 mt-4" type="radio" value="true" name="capacity" onChange={handleChange}/>
                                     ✅
@@ -79,8 +79,8 @@ const Register = (props) => {
                         </div>                                                        
                     </div>
 
-                    <div class="flex-col h-20 w-full justify-center items-center mt-4">
-                        <label class="flex justify-center sw-full">Social Distancing</label>
+                    <div class="flex-col h-20 w-full justify-center items-center mt-8">
+                        <label class="flex justify-center sw-full text-lg lg:text-2xl">Social Distancing</label>
                         
                         <div className="radio">
                             <label>
@@ -97,8 +97,8 @@ const Register = (props) => {
                         
                         </div>                                                        
                     </div>
-                    <div class="flex-col h-20 w-full justify-center items-center mt-4">
-                        <label class="flex justify-center sw-full">Mask Restrictions</label>
+                    <div class="flex-col h-20 w-full justify-center items-center mt-8">
+                        <label class="flex justify-center sw-full text-lg lg:text-2xl">Mask Restrictions</label>
                         
                         <div className="radio">
                             <label>
@@ -116,8 +116,8 @@ const Register = (props) => {
                         </div>                                                        
                     </div>
 
-                    <div class="flex-col h-20 w-full justify-center items-center mt-4">
-                        <label class="flex justify-center sw-full">Work from Home</label>
+                    <div class="flex-col h-20 w-full justify-center items-center mt-8">
+                        <label class="flex justify-center sw-full text-lg lg:text-2xl">Work from Home</label>
                         
                         <div className="radio">
                             <label>
@@ -134,8 +134,8 @@ const Register = (props) => {
                         
                         </div>                                                        
                     </div>
-                    <div class="flex-col h-20 w-full justify-center items-center mt-4">
-                        <label class="flex justify-center sw-full">Elder Hours</label>
+                    <div class="flex-col h-20 w-full justify-center items-center mt-8">
+                        <label class="flex justify-center sw-full text-lg lg:text-2xl">Elder Hours</label>
                         
                         <div className="radio">
                             <label>
@@ -154,7 +154,7 @@ const Register = (props) => {
                     </div>
 
 
-                    <div class="mt-12 ml-2">
+                    <div class="mt-10 ml-2 lg:mt-20">
                         <button type="submit" class="border-2 border-black p-2">Submit!</button>
                     </div>
                     
