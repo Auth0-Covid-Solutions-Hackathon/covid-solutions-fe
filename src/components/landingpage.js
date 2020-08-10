@@ -23,7 +23,7 @@ AOS.init()
         <div class="flex-col lg:flex border-black h-auto">
             <div class="flex-col w-full justify-center mt-8 ">
                 <h1 class="text-xl mb-2 lg:mb-8 md:text-3xl lg:text-3xl font-serif h-8 ">Safer Enviroments, Safer People</h1>
-                <h2 class="flex justify-center ml-2 mr-2 text-sm mt-2 md:mt-8 md:text-xl lg:text-xl  ">The Coronavirus has affected everyone and everything since its arrival. Many governments, organizations and companies are doing the absolute best that they can do to contain the viurs and prevent it from taking many more countless lives. Unfortunately many are not trying to help and some are even trying to profit off of this crisis. Since we are at the start of a new decade we have an obligation to our future if we want it to get any better. Find and search for what comapnies you would like to support based on their COVID-19 guidelines and restrictions. </h2>
+                <h2 class="flex justify-center ml-2 mr-2 text-sm mt-2 md:mt-8 md:text-xl lg:text-xl  ">The Coronavirus has affected everyone and everything since its arrival. Many governments, organizations and companies are doing the absolute best that they can do to contain the viurs and prevent it from taking many more countless lives. Unfortunately many are not trying to help and some are even trying to profit off of this crisis. Since we are at the start of a new decade we have an obligation to our future if we want it to get any better. Find and search for what companies you would like to support based on their COVID-19 guidelines and restrictions. </h2>
             </div>
             
             <div class="flex w-full justify-center mt-20 ">
