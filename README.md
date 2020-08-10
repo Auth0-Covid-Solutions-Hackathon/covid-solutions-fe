@@ -20,7 +20,7 @@ Fully mobile Responsive as well.
 
 **Tech stack used**:
 
-React, tailwindCSS, Axios, Aos
+React, tailwindCSS, Axios, Aos, Sqlite3
 
 
 <!------------------------------------------------------------------- -->
