@@ -46,3 +46,11 @@ React, tailwindCSS, Axios, Aos, Sqlite3
 
 
 yarn install/yarn start or you can ues the deployed version @ https://covid-solutions-fe.vercel.app/
+
+
+
+**Coming Soon**:
+
+## What's next for Covid Compromise
+
+  There is a lot coming for Covid Compromise. Firstly I would like to implement a search bar on the company page so that you can search for a specific company. Once you click on a card I would like for it to take you to that companies website. Also down the line I would like to add accounts to register with different permissions. A basic account just the view companies and to be able to favorite your favorite companies and save it to your account. Also a CEO account with special permissions to post a company.
