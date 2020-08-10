@@ -7,7 +7,7 @@ The Coronavirus has affected everyone and everything since its arrival. Many gov
 
 <!------------------------------------------------------------------- -->
 
-**How it works:
+**How it works**:
 
 On the landing page you can read and choose to register a company or view the list of companies already registered. On the companies page you can see a list of companies and their restrictions. Once you've found a company that matches your needs and restrictions you can choose to shop there or work there! If you already work for a company you can register your company and pick out what restrictions are in place at your company.
 
@@ -16,14 +16,14 @@ Fully mobile Responsive as well.
 
 <!------------------------------------------------------------------- -->
 
-**Tech stack used:
+**Tech stack used**:
 
 React, tailwindCSS, Axios, Aos
 
 
 <!------------------------------------------------------------------- -->
 
-**How to use it (Including set up instructions/requirements, local development):
+**How to use it (Including set up instructions/requirements, local development)**:
 
 
 
