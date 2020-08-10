@@ -37,7 +37,7 @@ const Register = (props) => {
         .post('https://covid-comprimise.herokuapp.com/company', company)
         .then(res => {
             console.log(res, "GOT EM")
-            props.history.push('/')
+            props.history.push('/companies')
         })
         .catch(err => alert("Submission did not go through."))
     }
