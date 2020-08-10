@@ -30,6 +30,7 @@ const Register = (props) => {
       
 
 
+      
       const onSubmit = e =>{
         e.preventDefault()
         console.log(company, "COMPAny")
