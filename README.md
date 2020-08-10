@@ -7,7 +7,9 @@ https://covid-comprimise.herokuapp.com/company
 
 https://github.com/Auth0-Covid-Solutions-Hackathon/covid-solutions-be
 
-https://www.youtube.com/watch?v=Gyqjeha8cn8 Demo Video
+**Demo Video**
+
+https://www.youtube.com/watch?v=Gyqjeha8cn8 
 
 
 
