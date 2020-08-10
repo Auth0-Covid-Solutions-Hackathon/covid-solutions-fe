@@ -15,7 +15,7 @@ function Nav() {
             <div 
              class="flex justify-center items-center mt-3 w-56 md:w-3/4 ">
                 <a href="/">
-                    <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold cursor-pointer lg:ml-40  font-serif "> <span class="text-logoblue">Covid</span> <span class="text-logodark">Comprimise</span></h1>
+                    <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold cursor-pointer lg:ml-40  font-serif "> <span class="text-logoblue">Covid</span> <span class="text-logodark">Compromise</span></h1>
                 </a>
             </div>
             <div class="flex justify-end items-center mt-3 mr-4 w-1/4 lg:mr-40">
